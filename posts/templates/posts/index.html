@@ -1,9 +1,16 @@
 <!DOCTYPE>
 <html lang="ja-jp">
 <head>
-    <title>投稿一覧</title>
+    <title>✨るりちゃんお絵かきありがとう✨</title>
 </head>
 <body>
-    <h1>投稿一覧ページ</h1>
+    <h1>ハムスター🐹</h1>
+    {% for post in posts.all %}
+        {{ post.title }}
+        <br /><br />
+        {{ post.published }}
+        <br /><br />
+        {{ post.summary }}
+    {% endfor %}
 </body>
 </html>
